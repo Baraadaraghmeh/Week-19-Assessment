@@ -6,7 +6,9 @@ var age=25
 var result="My name is: " + name + "and my age is: " + age
 */
 // 1) WRITE YOUR CODE UNDER THIS LINE
-
+let name ="Alex" ;
+let age =25 ;
+let result = "My name is :"+ name + "and my age is:"+ age ;
 
 
 
@@ -25,3 +27,14 @@ var object={
 }
  */
 // 2) WRITE YOUR CODE UNDER THIS LINE
+let food ="Fried chicken ";
+let color = "blue";
+let object ={
+   food:food,
+   color:color,
+   multi:(a,b)=>{
+    return <div>
+      {a ,b}
+    </div>
+   }
+}

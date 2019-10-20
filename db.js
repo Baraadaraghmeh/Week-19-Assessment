@@ -63,12 +63,12 @@ let updateTask = (id, cb) => {
 };
 
 // Q4:we have 6 errors here please fix them [6 pt]
-let deleteTask = (id, cb) => {
-  tasks.deleteOne({ ID: cb }, (err, result) => {
-    if (result) {
+let deleteOneTask = (_id, cb) => {
+  tasks.deleteOne({ _id: cb }, (err, result) => {
+    if (err) {
       console.log(err);
     } else {
-      getTasks();
+      deleteOneTask(_id);
     }
   });
 };
